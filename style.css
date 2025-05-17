@@ -125,6 +125,7 @@ span{
 }
 
 .calculator_container_sub{
+    box-shadow: 0 0 100px #ffff0042;
     border: 2px solid #FFFF00;
     border-radius: 20px;
     padding: 20px;
