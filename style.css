@@ -14,7 +14,7 @@ hr{
 
 .calculator{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     background-color: #000;
     color: #fff;
@@ -72,11 +72,60 @@ span{
     text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
 }
 
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zero,.add,.sub,.mul,.div,.mod,.dec{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 900;
+}
+
+.submit{
+    width: 240px;
+    height: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 900;
+}
+
+.one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover,.eight:hover,.nine:hover,.zero:hover,.add:hover,.sub:hover,.mul:hover,.div:hover,.mod:hover,.dec:hover,.submit:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid #FFFF00;
+}
+
+.result{
+    width: 240px;
+    height: 50px;
+    border: 2px solid #FFFF00;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.calculator_container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator_container_sub{
+    border: 2px solid #FFFF00;
+    border-radius: 20px;
+    padding: 20px;
+}
+
 /* ---------------------------Responsive--------------------------- */
 @media (max-width: 768px) {
     .calculator{
         flex-direction: column;
-        
+        gap: 50px;
     }
 
     .calculator_container1{
@@ -86,5 +135,9 @@ span{
     .calculator_container1, .calculator_container2{
         width: auto;
         height: auto;
+    }
+
+    .calculator_container2{
+        padding-bottom: 50px;
     }
 }
