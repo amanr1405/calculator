@@ -105,13 +105,13 @@ span{
 
 .result{
     width: 240px;
-    height: 50px;
+    min-height: 50px;
     border: 2px solid #FFFF00;
-    border-radius: 20px;
-    background-color: #fff;
+    border-radius: 10px;
+    background-color: #252627;
     font-size: 18px;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: end;
