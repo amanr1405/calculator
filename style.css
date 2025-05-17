@@ -108,6 +108,13 @@ span{
     border: 2px solid #FFFF00;
     border-radius: 20px;
     background-color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
 }
 
 .calculator_container2{
