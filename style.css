@@ -5,6 +5,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+hr{
+    width: 80%;
+    height: 3px;
+    border: none;
+    background: #FFFF00;
+}
+
 .calculator{
     width: 100vw;
     height: 100vh;
@@ -70,6 +77,10 @@ span{
     .calculator{
         flex-direction: column;
         
+    }
+
+    .calculator_container1{
+        gap: 20px;
     }
 
     .calculator_container1, .calculator_container2{
