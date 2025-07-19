@@ -1,98 +1,40 @@
-var input="";
+let input = "";
 
-function one(val){
-    input=input+val;
+
+function one(val) { updateInput(val); }
+function two(val) { updateInput(val); }
+function three(val) { updateInput(val); }
+function four(val) { updateInput(val); }
+function five(val) { updateInput(val); }
+function six(val) { updateInput(val); }
+function seven(val) { updateInput(val); }
+function eight(val) { updateInput(val); }
+function nine(val) { updateInput(val); }
+function zero(val) { updateInput(val); }
+function add(val) { updateInput(val); }
+function sub(val) { updateInput(val); }
+function mul(val) { updateInput(val); }
+function div(val) { updateInput(val); }
+function mod(val) { updateInput(val); }
+
+function updateInput(val) {
+    input += val;
     document.getElementById("result").innerText = input;
 }
 
-function two(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function three(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function four(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function five(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function six(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function seven(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function eight(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function nine(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function zero(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function add(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function sub(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function mul(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function div(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
-
-function del(){
+function del() {
+    input = "";
     document.getElementById("result").innerText = "0";
-    input=0;
 }
 
-function mod(val){
-    input=input+val;
-    document.getElementById("result").innerText = input;
-}
 
-function result(){
-    var sym="";
-    var num1=0;
-    var num2=0;
-    var arr=input.split(/([+\-*/%])/);
-    for(var i=0;i<arr.length;i++){
-        if(arr[i]=='+'||arr[i]=='-'||arr[i]=='*'||arr[i]=='/'||arr[i]=='%'){
-            if(arr[i=='+']){
-                num1=parseInt(arr[i]);
-            }
-        }
+function result() {
+    try {
+        let output = eval(input); 
+        document.getElementById("result").innerText = output;
+        input = output.toString();
+    } catch (e) {
+        document.getElementById("result").innerText = "Error";
+        input = "";
     }
-    console.log(input);
-    console.log(sym);
-    console.log(arr);
 }
